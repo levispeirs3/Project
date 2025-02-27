@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", serif;
+    color: #13293D;
+    line-height: 1.6;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    padding: 0 15px;
+    margin:  auto;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006494;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 700px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+/* Hero Section */
+
+.hero {
+    width: 100%;
+    height: 70%;
+    padding: 0 1rem;
+    /* color: white; */
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    justify-content: space-around;
+    text-align: end;
+    position: relative;
+    gap: 600px;
+}
+
+.hero .hero-background-img img {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 100px;
+    max-width: 30%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #006494;
+    color: white;
+    padding: 0.75rem 1.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+}
+
+/* Card Section */
+
+.card-section {
+    width: 100%;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.icon{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #13293D;
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
