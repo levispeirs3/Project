@@ -8,6 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 3/26 "How to add a google font to HTML?" -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,36 +16,37 @@
 </head>
 
 <body>
+
+    <div id="top"></div>
+
     <!-- Navigation -->
      <nav>
         <div class="container nav-container">
             <div class="logo">
+                <span class="big-logo">EB</span>
                 <span>EverBuilt Construction Co.</span>
             </div>
             <div class="nav-links">
                 <a href="#">Home</a>
-                <a href="#">Projects</a>
                 <a href="#">About</a>
-                <a href="#">Contact Us</a>
+                <div class="dropdown">
+                    <!-- 3/27 "How to make a dropdown menu using only HTML and CSS?" (Used this here and in the HTML Form) -->
+                    <a href="#">Our Projects<i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Spec Home</a></li>
+                        <li><a href="#">Town Home</a></li>
+                        <li><a href="#">Apartment</a></li>
+                        <li><a href="#">Cusom Home</a></li>
+                    </ul>
+                </div>
+                <!-- 3/26 "Where to put the code for an icon with Font Awesome?" -->
+                <button class="nav-button">Contact Us<i class="fa-solid fa-square-arrow-up-right"></i></button>
             </div>
         </div>
      </nav>
-     <!-- <header>
-        <div class="container nav-container">
-            <div class="logo">
-                <span>EverBuilt Construction Co.</span>
-            </div>
-            <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-                <a href="#">Contact Us</a>
-            </nav>
-        </div>
-     </header> -->
     
      <!-- Project Section -->
-      <div class="hero">
+      <section class="hero">
         <div class="hero-background-img">
             <img src="home-image.jpg" alt="Home">
         </div>
@@ -53,7 +55,7 @@
             <p>"Discover this beautifully crafted 3-bedroom, 2-bathroom spec home featuring an open floor plan, modern finishes, and energy-efficient features. Move-in ready and located in a desirable neighborhood, it offers both style and comfort for today’s homeowners."</p>
             <button class="btn">Finance Info</button>
         </div>
-      </div>
+      </section>
 
       <!-- Card Section -->
       <section class="card-section">
@@ -71,31 +73,111 @@
                     <div class="card-content">
                         <h3 class="card-title">Town Home</h3>
                         <p>Modern 2-bedroom, 2-bathroom townhome with an open floor plan, stylish finishes, and a private backyard. Conveniently located in a vibrant community, this home offers comfort and easy living.</p>
+                        <div class="button-card-container">
+                            <button class="btn-2">Learn More</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-content">
-                        <div class="card-image"><img src="townhome-image-2.jpg" alt="Town Homes"></div>
+                    <div class="card-image"><img src="custom-home.jpg" alt="Custom Home"></div>
 
-                        <h3 class="card-title">Town Home</h3>
-                        <p>Modern 2-bedroom, 2-bathroom townhome with an open floor plan, stylish finishes, and a private backyard. Conveniently located in a vibrant community, this home offers comfort and easy living.</p>
+                    <div class="card-content">
+                        <h3 class="card-title">Custom Home</h3>
+                        <p>Stunning custom-built home with 4+ bedrooms and 4+ bathrooms. This home offers spacious living areas, a gourmet kitchen, and a private backyard. It provides a perfect balance of elegance and convenience.</p>
+                        <div class="button-card-container">
+                            <button class="btn-2">Learn More</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-content">
-                        <div class="card-image"><img src="townhome-image-2.jpg" alt="Town Homes"></div>
+                <div class="card-image"><img src="apartment.jpg" alt="Apartment"></div>
 
-                        <h3 class="card-title">Town Home</h3>
-                        <p>Modern 2-bedroom, 2-bathroom townhome with an open floor plan, stylish finishes, and a private backyard. Conveniently located in a vibrant community, this home offers comfort and easy living.</p>
+                    <div class="card-content">
+                        <h3 class="card-title">Apartment</h3>
+                        <p>Spacious 2-bedroom, 1-bathroom apartment. Featuring a bright living area, fully equipped kitchen, and private balcony, this home offers both comfort and convenience. It’s the perfect blend of style and easy living.</p>
+                        <div class="button-card-container">
+                            <button class="btn-2">Learn More</button>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
+        </section>
 
+      <!-- Meet the Team Section -->
+      <section class="team">
+        <div class="team-container">
+            <div class="team-content">
+                <h1>Meet the Team</h1>
+                <p>At EverBuilt, our skilled team of homebuilding professionals is dedicated to bringing your dream home to life. From design to construction, we work closely with you to ensure every detail is just right. With a focus on quality, craftsmanship, and customer satisfaction, we’re here to turn your vision into reality.</p>
+            </div>
+            <div class="team-img">
+                <img src="team-meeting.jpg" alt="Team">
+            </div>
+        </div>
+      </section>
+
+      <!-- Walkthrough Section -->
+      <section class="walkthrough">
+        <video class="walkthrough-background-video" autoplay muted loop>
+            <source src="walkthrough-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="walkthrough-container">
+            <h2>Sign up to schedule a walkthrough</h2>
+            <!-- 3/25 "How to make a HTML Form" -->
+            <form class="walkthrough-form">
+                <input type="text" placeholder="name" class="input">
+
+                <input type="email" placeholder="email address" class="input">
+                <!-- 3/25 "What type do you put for a phone number input in a HTML form?" -->
+                <input type="tel" placeholder="phone number"
+                class="input">
+
+                <input type="number" placeholder="age" class="input">
+                <!-- Refer to other comment where I looked up how to make a dropdown menu -->
+                <!-- 3/25 "How to change the default text in a select?" -->
+                <select name="location" class="select">
+                    <option value="" disabled selected>select a location</option>
+                    <option value="Vernal">Vernal</option>
+                    <option value="Roosevelt">Roosevelt</option>
+                    <option value="Heber">Heber</option>
+                    <option value="Duchesne">Duchesne</option>
+                </select>
+            </form>
+            <div class="walkthrough-btn-container">
+                <button type="submit" class="walkthrough-btn">Submit<i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+            </div>
+        </div>
       </section>
     
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-locations">
+                    <h2>Locations</h2>
+                    <div class="locations">
+                        <a href="#">Vernal, UT</a>
+                        <a href="#">Roosevelt, UT</a>
+                        <a href="#">Duchesne, UT</a>
+                        <a href="#">Heber, UT</a>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <h1>EVERBUILT</h1>
+                    <h2">Build Together, Build to Last</h2>
+                </div>
+                <!-- 3/25 "How do you make a back to the top button?" -->
+                <div class="footer-nav">
+                    <a href="#top"><button class="footer-nav-btn"><i class="fa-solid fa-arrow-up"></i>Back to the top</button></a>
+                </div>
+            </div>
+        </div>
+
+      </footer>
 </body>
 </html>
