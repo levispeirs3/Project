@@ -50,6 +50,7 @@ nav {
     align-items: center;
     font-weight: bold;
     font-size: 1.5rem;
+    flex-shrink: 1.5;
 }
 
 .nav-links {
@@ -561,18 +562,23 @@ nav {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     p {
         font-size: 1rem;
     }
     
     .hero {
         padding: 5px 10px;
-        height: 60vh;
+        max-height: 60vh;
+        overflow: hidden;
     }
     
     .hero-content {
         padding: 0px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
     }
     
     .hero-content p{
@@ -589,9 +595,18 @@ nav {
         width: 90%;
     }
 
+    .card-content {
+        height: 12rem;
+    }
+
+    .card-image {
+        height: 10rem;
+    }
+
     .btn-2 {
-        width: 25%;
-        font-size: 0.8rem;
+        width: 17%;
+        font-size: 0.6rem;
+        margin-top: 5px;
     }
     
     .team-content {
@@ -606,12 +621,33 @@ nav {
         font-size: 1rem;
     }
 
+    .team-img {
+        width: 45%;
+    }
+
     .walkthrough-container {
         width: 95%;
     }
 
     .walkthrough-btn {
         font-size: 0.7rem;
+    }
+
+    .locations {
+        font-size: 0.7rem;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-section h2 {
+        font-size: 1rem;
+    }
+
+    .footer-nav-btn {
+        font-size: 0.7rem;
+        width: 95%;
     }
     
     .hamburger {
@@ -646,5 +682,5 @@ nav {
   }
 
   @media (max-width: 480px) {
-    /* create a grid to organize the content. Add some content on another page  */
+    
   }
