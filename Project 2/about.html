@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverBuilt Construction Co.</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 3/26 "How to add a google font to HTML?" -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+    <div id="loading-screen">
+        <div class="house-container">
+            <div class="house">
+                <div class="roof"></div>
+                <div class="door"></div>
+                <div class="window window-left"></div>
+                <div class="window window-right"></div>
+            </div>
+        </div>
+        <p>Loading...</p>
+    </div>
+
+        <div class="sale-banner">
+            <div class="sale-text">
+                Brand New Units! Contact us now for a walk through!
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <header>
+            <div class="container nav-container">
+                <div class="logo">
+                    <span class="big-logo">EB</span>
+                    <span>EverBuilt Construction Co.</span>
+                </div>
+                
+                <nav>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+                    <div class="nav-links">
+                        <label for="menu-toggle" class="close-btn">&times;</label>
+                    <!-- Added Navigation between two pages -->
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <div class="dropdown">
+                            <!-- 3/27 "How to make a dropdown menu using only HTML and CSS?" (Used this here and in the HTML Form) -->
+                            <a href="#">Our Projects<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Spec Home</a></li>
+                                <li><a href="#">Town Home</a></li>
+                                <li><a href="#">Apartment</a></li>
+                                <li><a href="#">Cusom Home</a></li>
+                            </ul>
+                        </div>
+                        <!-- 3/26 "Where to put the code for an icon with Font Awesome?" -->
+                        <button class="nav-button">Contact Us<i class="fa-solid fa-square-arrow-up-right"></i></button>
+                    </nav>    
+                </div>
+            </div>
+        </header>
+
+        <!-- Second page with grid practice -->
+        <section>
+            <div class="easter-egg">
+                <div class="div1"> 
+                    <iframe class="egg-video" src="https://www.youtube.com/embed/21EzHWNCJkk?si=RxdS_xz4FMea6XRB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+                <div class="div2">
+                    <h1>THE HOLY WAR</h1>
+                </div>
+                <div class="div3">
+                    <p>Here at EverBuilt we are massive BYU fans. Live out one our favorite moments of the year as we beat UTAH in the Holy War!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-locations">
+                        <h2>Locations</h2>
+                        <div class="locations">
+                            <a href="#">Vernal, UT</a>
+                            <a href="#">Roosevelt, UT</a>
+                            <a href="#">Duchesne, UT</a>
+                            <a href="#">Heber, UT</a>
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <h1>EVERBUILT</h1>
+                        <h2>Build Together, Build to Last</h2>
+                    </div>
+                    <!-- 3/25 "How do you make a back to the top button?" -->
+                    <div class="footer-nav">
+                        <a href="#top"><button class="footer-nav-btn"><i class="fa-solid fa-arrow-up"></i>Back to the top</button></a>
+                    </div>
+                </div>
+            </div>    
+        </footer>
